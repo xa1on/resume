@@ -1,0 +1,226 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.35in}
+\addtolength{\evensidemargin}{-0.35in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Chenghao Li} \\ \vspace{6pt}
+    \small (408)256-3278 $||$ \href{mailto:chenghaoli36@berkeley.edu}{{chenghaoli36@berkeley.edu}} $||$ 
+    \href{https://linkedin.com/in/li-chenghao/}{{linkedin.com/in/li-chenghao}} $||$
+    \href{https://github.com/xa1on}{{github.com/xa1on}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Berkeley (Data Science)}{Berkeley, CA}
+      {Advanced CS Structures/Data Structures \& Algorithms - Foundations, Probability, Principles of DS.}{Present -- 2026}
+    \resumeSubheading
+      {Foothill College / San Jose City College (Computer Science, Physics, Math)}{Los Altos, CA}
+      {Data Structures \& Algorithms (C++, Python, Java) - Comp Architecture - Discrete Math.}{Dual Enrolled}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {OCF Board of Directors (Open Computing Facility)}{2024 -- Present}
+      {UC Berkeley}{Berkeley, CA}
+      \resumeItemListStart
+        \resumeItem{Assisted the administration of Linux infrastructure serving petabytes of data annually for 80K+ students and faculty.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Lead Developer}{2022 -- Present}
+      {Archaic}{}
+      \resumeItemListStart
+        \resumeItem{Developed open-source OpenCV/FFmpeg based tools and GUI libraries while providing support for and maintaining projects/tools utilized by 1000+ users.}
+        \resumeItem{Contributed 37K+ lines of code as the sole developer of all projects in the organization GitHub.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Hacakathon Logistics}{2021 -- 2022}
+      {ThetaHacks}{}
+      \resumeItemListStart
+        \resumeItem{Organized the hackathon as part of the logistics team serving 500+ attendees.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Robotics Programming Lead \& Team Lead}{2018 -- 2023}
+      {Milpitas Xtreme Robotics (MXR)}{Milpitas, CA}
+      \resumeItemListStart
+        \resumeItem{Co-founder of the MXR VEX Robotics Competition team(1669X), now one of the most competitive high school robotics organizations in the state with worlds qualifications 4 years in a row.}
+        \resumeItem{Earned the team their first award and worlds qualification in over a decade within a year of joining the team.}
+        \resumeItem{Mentored 100+ students to help further their interest in STEM-related subjects.}
+        \resumeItem{Represented and developed for the team while attending multiple hackathons, including ProHacks, BridgeHacks, DubHacks, SigmaHacks, DVHacks, and more, winning additional awards for the organization.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Depth-Anything-TensorRT Contributions} $|$ \emph{C++, Python, ONNX, TensorRT, OpenCV.}}{2024 -- 2025}
+        \resumeItemListStart
+          \resumeItem{Developed a command line interface to improve functionality and ease of use for a TensorRT port of a monocular depth estimation model (DepthAnythingV2/V1).}
+        \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Prorecs} $|$ \emph{Batch, FFmpeg.}}{2021 -- 2022}
+          \resumeItemListStart
+            \resumeItem{Engineered a FFmpeg based video processing tool capable of batch encoding videos and image sequences with batch frontend and backend.}
+            \resumeItem{Implemented custom config system with support for all FFmpeg compatible codecs.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{RBLXMVM} $|$ \emph{C++, Lua.}}{2019 -- 2023}
+          \resumeItemListStart
+            \resumeItem{Designed, invented and supported an entire suite of game engine tools from scratch.}
+            \resumeItem{Published plugins which generated 1000+ sales.}
+            \resumeItem{Utilized cubic/bezier interpolation methods to generate seemless camera paths.}
+            \resumeItem{Integrated plugins into other codebases with reverse engineering strategies when no documentation was available.}
+            \resumeItem{Created an open-source GUI library from scratch.}
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+\section{Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+     \small{\item{
+     \textbf{Robotics}{: \href{https://www.musd.org/district-news/milpitas-xtreme-robotics-team-wins-state-championship-advances-to-world-competition}{\underline{VRC State Tournament Champion, Skills Champion, Excellence Award, Design Award.}}} \\
+     \textbf{Hacakthons}{: ProHacks 1st place, Best Use of Google API(DialogFlow) DubHacks.} \\
+    }}
+ \end{itemize}
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript (NodeJS), C\#, HTML/CSS.} \\
+     \textbf{Frameworks}{: OpenCV, React, Express, FFmpeg, Flutter, BLAS, Pandas, Numpy, MongoDB.} \\
+     \textbf{Developer Tools}{: Git, VS Code, PyCharm, IntelliJ, Eclipse, AutoCAD.} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
